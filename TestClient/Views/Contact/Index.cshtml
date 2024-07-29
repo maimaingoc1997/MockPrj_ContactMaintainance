@@ -4,15 +4,45 @@
     Layout = null;
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-      <h2>Hello</h2>
-</div>
-</body>
-</html>
+@{
+    ViewData["Title"] = "Contacts";
+}
+
+<h1>Contacts</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Contact Name</th>
+       
+       
+        <th>MobilePhone</th>
+    
+        <th>EmailAddress</th>
+     
+        <th>ContactType</th>
+        
+        <th>IsActive</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var contact in Model)
+    {
+        <tr>
+            <td>@contact.Firstname @contact.Surname </td>
+        
+            <td>@contact.MobilePhone</td>
+            
+            <td>@contact.EmailAddress</td>
+           
+            <td>@contact.ContactType</td>
+          
+            <td>@contact.IsActive</td>
+             <td>
+                <a asp-action="Details" asp-route-id="@contact.Id">Details</a>
+             </td>
+        </tr>
+    }
+    </tbody>
+</table>

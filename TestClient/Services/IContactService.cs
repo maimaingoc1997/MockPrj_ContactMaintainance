@@ -6,5 +6,5 @@ public interface IContactService
     Task<Contact> GetContactByIdAsync(int id);
     Task<Contact?> CreateContactAsync(Contact contact);
     Task<Contact?> UpdateContactAsync(int id, Contact contact);
-    Task DeleteContactAsync(int id);
+   
 }

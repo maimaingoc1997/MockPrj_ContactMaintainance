@@ -229,3 +229,7 @@ g
 7TestClient/wwwroot/lib/bootstrap/dist/css/bootstrap.css,9\7\972ad18086e9576b90300252f048a8bf10fe7c23
 u
 ETestClient/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css,f\9\f924dd365bf3f7b01a5550c5b1664e657bb665a7
+W
+'TestClient/Views/Contact/Details.cshtml,f\0\f0b05c188fe2984d4df97e08b28b5625fa9079ce
+V
+&TestClient/Views/Contact/Create.cshtml,7\1\718ff4b229b3ac85a9153351779a271486230f73

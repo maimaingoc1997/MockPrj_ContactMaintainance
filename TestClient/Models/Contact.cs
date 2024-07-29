@@ -27,5 +27,7 @@ public class Contact
     public string JobTitle { get; set; }
 
     public bool IsActive { get; set; }
+
+    
     //cho truy vấn ( tính đóng gói) lấy ra v nhập vào thuộc tính
 }

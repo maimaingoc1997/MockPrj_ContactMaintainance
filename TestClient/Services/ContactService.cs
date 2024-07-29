@@ -39,9 +39,5 @@ public class ContactService : IContactService
         return await response.Content.ReadFromJsonAsync<Contact>();
     }
 
-    public async Task DeleteContactAsync(int id)
-    {
-        var response = await _httpClient.DeleteAsync($"{_baseUrl}contacts/{id}");
-        response.EnsureSuccessStatusCode();
-    }
+    
 }

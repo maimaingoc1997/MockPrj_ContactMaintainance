@@ -18,17 +18,17 @@ public class ContactController : Controller
         return View(contacts);
     }
 
-    // public async Task<IActionResult> Details(int id)
-    // {
-    //     var contact = await _contactService.GetContactByIdAsync(id);
-    //     return View(contact);
-    // }
+    public async Task<IActionResult> Details(int id)
+    {
+        var contact = await _contactService.GetContactByIdAsync(id);
+        return View(contact);
+    }
     //
-    // [HttpGet]
-    // public IActionResult Create()
-    // {
-    //     return View();
-    // }
+    [HttpGet]
+    public IActionResult Create()
+    {
+        return View();
+    }
     //
     // [HttpPost]
     // public async Task<IActionResult> Create(Contact contact)

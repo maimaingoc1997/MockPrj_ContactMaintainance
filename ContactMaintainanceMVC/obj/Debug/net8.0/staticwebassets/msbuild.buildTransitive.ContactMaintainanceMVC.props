@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ContactMaintainanceMVC.props" />
+</Project>

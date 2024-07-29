@@ -10,7 +10,7 @@ public class ContactService
     public ContactService(HttpClient httpClient)
     {
         _httpClient = httpClient;
-        _httpClient.BaseAddress = new Uri("http://localhost:5237/");
+        _httpClient.BaseAddress = new Uri("http://localhost:5237/api/");
     }
 
     public async Task<List<Contact>> GetContactsAsync()

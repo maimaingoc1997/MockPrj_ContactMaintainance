@@ -10,7 +10,7 @@ public class ContactsController : Controller
         _contactService = contactService;
     }
 
-    public async Task<IActionResult> Index()
+    public async Task<IActionResult> IndexContact()
     {
         var contacts = await _contactService.GetContactsAsync();
         return View(contacts);
